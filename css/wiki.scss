@@ -1,0 +1,108 @@
+
+body {
+	color:  #333;
+}
+
+
+.header {
+	margin: {
+		top: 2.5rem;
+		bottom: 2rem;
+	}
+	h1 {
+		font: {
+			family: 'Libre Baskerville', serif;
+		}	
+	}
+	letter-spacing: 0.12rem;
+
+}
+
+.small-h1 {
+	font: {
+		size: 2rem;
+	}
+}
+
+button.button {
+	border-radius: 0.2rem;
+}
+
+input[type=text] {
+	border: {
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+	box-shadow: none;
+	font: {
+		size: 2rem;
+		weight: 200;
+	}
+	padding: {
+		left: 2rem;
+		top: 1.5rem;
+		bottom: 1.5rem;
+	}
+	border-radius: 0.2rem;
+}
+
+iframe#random-modal, iframe#results-modal {
+	width: 100%;
+	height: 75vh;
+}
+
+.align-center {
+	justify-content: center;
+}
+
+.results {
+	// background-color: rgba(0,0,0,0.1);
+	// height: 20vh;
+	margin: 20px;
+	padding: 2rem;
+	padding-bottom: 1rem;
+	border-radius: 0.25rem;
+	p {
+		color: #666;
+	}
+}
+
+h3 {
+	margin-bottom: 0;
+	font: {
+		family: 'Libre Baskerville', serif;
+	}
+}
+
+a h3:hover {
+	opacity: 0.6;
+}
+
+hr {
+	margin-top: 0;
+}
+
+.footer {
+	padding-top: 20px;
+}
+
+.footer a {
+	color: grey;
+	&:hover {
+		font-size: 1.1rem;
+	}
+}
+
+/* format h1 on small screen  */
+@media (max-width: 640px) {
+	.small-h1 {
+		font-size: 1rem;
+	}
+}
+
+
+
+
+
+

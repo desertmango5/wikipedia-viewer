@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Viewer</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/wiki.css">
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-y grid-frame">
+<!-- HEADER -->
+        <div class="cell shrink header">
+          <h1 class="text-center">W<span class="small-h1">IKIPEDI</span>A <span class="subheader small-h1">VIEWER</span></h1>
+        </div>
+
+<!-- SEARCH BAR -->
+        <div class="cell shrink">
+          <div class="grid-x search">
+            <!-- SEARCH -->
+            <div class="cell medium-6 medium-offset-3 grid-x grid-padding-x">
+
+              <div class="cell medium-auto">
+                <input id="searchEntry" type="text" placeholder="Search Wikipedia">
+              </div>
+            </div>
+          </div>
+<!-- SEARCH & RANDOM BUTTONS -->
+          <div class="grid-x grid-margin-x align-center">
+            <div class="cell shrink">
+                <button id="searchButton" class="button secondary small hollow">Search</button>
+            </div>
+              
+            <div class="cell shrink">
+                <a id="randomURL" href="https://en.wikipedia.org/wiki/Special:Random">
+                  <button id="random-button" class="button secondary small hollow">Random</button></a>
+            </div>
+          </div>
+        </div>
+     
+
+<!-- RANDOM MODAL -->
+        <div class="reveal large" id="random-modal" data-reveal>
+          <iframe id="random-modal" name="iframe-random">
+            <p>Your browser does not support iFrames.</p>
+          </iframe>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+<!-- SEARCH RESULTS -->
+        <div class="cell auto cell-block-container">
+          <div class="grid-x grid-padding-x">
+            <div id="searchResults" class="cell medium-10 medium-offset-1 cell-block-y">
+              
+            </div> 
+          </div>
+        </div>
+
+<!-- RESULTS MODAL -->
+        <div class="reveal large" id="results-modal" data-reveal>
+          <iframe id="random-modal" name="iframe-results">
+            <p>Your browser does not support iFrames.</p>
+          </iframe>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+<!-- FOOTER -->
+          <div class="cell shrink footer">
+            <p class="text-center">&copy 2017 <a href="https://codepen.io/mkmanges/" target="_blank" title="Find me on CodePen">Michael Manges</a></p>
+          </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/wiki.js"></script>
+  </body>
+</html>
