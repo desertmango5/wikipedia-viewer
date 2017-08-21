@@ -24,7 +24,8 @@ input[type=text] {
   padding-left: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  border-radius: 0.2rem; }
+  border-radius: 0.2rem;
+  height: 2.5em; }
 
 iframe#random-modal, iframe#results-modal {
   width: 100%;
